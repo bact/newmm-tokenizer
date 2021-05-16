@@ -1,14 +1,13 @@
 import os
 from typing import Union
 
-_CORPUS_DIRNAME = "corpus"
-_CORPUS_PATH = os.path.join('', _CORPUS_DIRNAME)
 
 def corpus_path() -> str:
     """
     Get path where corpus files are kept locally.
     """
     return os.path.dirname(__file__)
+
 
 def get_corpus(filename: str, as_is: bool = False) -> Union[frozenset, list]:
     """

@@ -1,5 +1,7 @@
 from setuptools import setup, find_packages
 
+from Cython.Build import cythonize
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -26,4 +28,5 @@ setup(
         "Topic :: Text Processing :: Linguistic",
     ],
     python_requires='>=3.6',
+    ext_modules = cythonize("**/*.pyx"),
 )
