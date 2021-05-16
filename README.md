@@ -1,4 +1,4 @@
-# __newmm-tokenizer__
+# __Cythonized newmm-tokenizer__
 
 Standalone Dictionary-based, Maximum Matching + Thai Character Cluster (newmm) tokenizer extracted from [PyThaiNLP](https://github.com/PyThaiNLP/pythainlp).
 
